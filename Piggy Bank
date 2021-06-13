@@ -1,0 +1,6 @@
+var pesos: Double = 4 //1 peso is 0.050320737 dollars
+var reais: Double = 23.5 //1 reai is 0.19549323 dollars
+var soles: Double = 11 //1 sole is 0.26258418 dollars
+var total = pesos * 0.050320737 + reais * 0.19549323 + soles * 0.26258418
+
+print("US Dollars = $\(total)")
