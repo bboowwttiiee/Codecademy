@@ -1,0 +1,6 @@
+var dogAge = 17 // My dog’s age
+var earlyYears = 21 // The first two years of a dog’s life
+var laterYears = (dogAge - 2) * 4 // Dog’s following years, where each one equals 4 human years
+var humanYears = earlyYears + laterYears // Add first 2 years and following years
+
+print("My name is Joy! Ruff ruff, I am \(humanYears) years old in human years.")
