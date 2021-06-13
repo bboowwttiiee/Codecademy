@@ -1,0 +1,29 @@
+var playerName = "Mary" // Player's name. Can be empty
+var playerQuestion = "Is this 2021 yet?" // Player's question
+var randomNumber = Int.random(in: 1...9) // Random number of question
+var eightBall: String // Ball's answer
+
+switch randomNumber { // All the cases with ball's answers
+  case 1:
+    eightBall = "Yes - definitely"
+  case 2:
+    eightBall = "It is decidedly so"
+  case 3:
+    eightBall = "Without a doubt"
+  case 4:
+    eightBall = "Reply hazy, try again"
+  case 5:
+    eightBall = "Ask again later"
+  case 6:
+    eightBall = "Better not tell you now"
+  case 7:
+    eightBall = "My sources say no"
+  case 8:
+    eightBall = "Outlook not so good"
+  case 9:
+    eightBall = "Very doubtful"
+  default:
+    eightBall = "Error"
+}
+
+playerName.isEmpty ? print("Question: \(playerQuestion)") : print("\(playerName) asks: \(playerQuestion)") // One line ternary conditional operator instead of an if/else statement
