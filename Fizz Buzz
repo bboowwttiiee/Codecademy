@@ -1,0 +1,31 @@
+// Using a for-in loop:
+for i in 1...100 {
+  if i % 3 == 0 && i % 5 == 0 {
+    print("FizzBuzz")
+  } else if i % 3 == 0 {
+    print("Fizz")
+  } else if i % 5 == 0 {
+    print("Buzz")
+  } else if i % 2 == 0 {
+    print("Pazz")
+  } else {
+    print(i)
+  }
+}
+
+// Using a while loop:
+var counter = 1
+
+while counter <= 100 {
+  // Could also do: counter % 15 == 0
+  if counter % 3 == 0 && counter % 5 == 0 {
+    print("FizzBuzz")
+  } else if counter % 3 == 0 {
+    print("Fizz")
+  } else if counter % 5 == 0 {
+    print("Buzz")
+  } else {
+    print(counter)
+  }
+  counter += 1
+}
