@@ -1,0 +1,15 @@
+var list = [2, 4, 3, 6, 1, 9]
+
+var evenNums = 0
+var oddNums = 0
+
+for num in list {
+  if num % 2 == 0 { // If num is even then num adds to evenNums
+    evenNums += num
+  } else {
+    oddNums == 0 ? (oddNums += num) : (oddNums *= num) // Else if num is odd and not equal to 0 then oddNums multiply to num
+  }
+}
+
+print("Sum of even numbers is \(evenNums)")
+print("Product of odd numbers is \(oddNums)")
