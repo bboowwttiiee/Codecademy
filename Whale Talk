@@ -7,10 +7,8 @@ for char in input {
   switch lowerChar {
     case "a", "i", "o":
       output += lowerChar.uppercased()
-    case "e":
-      output += "EE"
-    case "u":
-      output += "UU"
+    case "e", "u":
+      output += lowerChar == "e" ? "EE" : "UU"
     default:
       continue
   }
