@@ -1,0 +1,31 @@
+// Write your code below 📼
+// This mixtape is going to be about love and needness of someone's love
+print(".------------------------.")
+print("| You're eternity 90 min |")
+print("|     __  ______  __     |")
+print("|    (  )|).....|(  )    |")
+print("|    (__)|)_____|(__)    |")
+print("|    ________________    |")
+print("|___/_._o________o_._\\___|")
+
+var mixtape: [String] = []
+mixtape.append("Beggin - Måneskin")
+mixtape.append("Cosmic Girl (Dimitri From Paris Remix Radio Edit) - Jamiroquai")
+mixtape.append("I Was Looking - Zemfira")
+mixtape.append("Take On Me - a-ha")
+mixtape.append("Dancing In The Moonlight x Pumped Up Kicks - Darcy Strokes")
+mixtape.append("Вечность - MONATIK")
+
+print(mixtape.count)
+
+mixtape.remove(at: 1)
+mixtape.insert("Cosmic Girl (Dimitri From Paris Remix Radio Edit) - Jamiroquai", at: 1)
+
+for song in 1...mixtape.count { // For each song in mixtape array
+  if song == 1 { // If before first song it prints Side A
+    print("\nSide A:\n")
+  } else if song == 4 { // If after third song it prints Side A
+    print("\nSide B:\n")
+  }
+  print("\(song). \(mixtape[song - 1])") // Each loop it prints number of a song and a song from the array by its index minus 1
+}
