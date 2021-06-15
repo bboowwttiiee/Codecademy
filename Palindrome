@@ -1,0 +1,35 @@
+var text = "hello"
+var textArray = [String]()
+
+for letter in text {
+  textArray.append(String(letter))
+}
+
+var reversed = [String]()
+
+var counter = textArray.count - 1
+
+// Check if the word is palindrome by using a while loop
+
+while counter >= 0 {
+  reversed.append(textArray[counter])
+  counter = counter - 1
+}
+
+if textArray == reversed {
+  print("We have a palindrome!")
+} else {
+  print("'\(text)' is not palindrome.")
+}
+
+// Check if the word is palindrome by using a for-in loop
+
+for letter in stride(from: textArray.count - 1, to: 0, by: 1) {
+  reversed.append(textArray[letter])
+}
+
+if textArray == reversed {
+  print("We have a palindrome!")
+} else {
+  print("'\(text)' is not palindrome.")
+}
