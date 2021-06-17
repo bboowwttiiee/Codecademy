@@ -1,0 +1,17 @@
+// Practice using dictionaries below ⭐
+var favoriteMovies = ["1": "Wrath of Man", "2": "I, Legend", "3": "Interstellar"]
+
+favoriteMovies.removeValue(forKey: "1")
+favoriteMovies.removeAll()
+
+print(favoriteMovies)
+
+favoriteMovies["Jason"] = "Wrath of Man"
+favoriteMovies["William"] = "I, Legend"
+favoriteMovies["Matthew"] = "Interstellar"
+
+print(favoriteMovies)
+
+for (actor, movie) in favoriteMovies {
+  print("\(actor) was filmed in \(movie)")
+}
