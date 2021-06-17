@@ -1,0 +1,14 @@
+var alphabet: [Character] = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
+var secretMessage = "codecademy".lowercased() // Make all the letters lowercased in order to compare them with the letters in the alphabet array
+var message = Array(secretMessage)
+
+for i in 0 ..< message.count { // Each letter in message...
+  for j in 0 ..< alphabet.count { // ...we compare to each letter in the alphabet array
+    if message[i] == alphabet[j] { // If letter are the same...
+      message[i] = alphabet[(j+3) % 26] // ...then we take the letter 3 points after in the alphabet array (and check if the letter is not out of range) and add it to the message array
+      break // Stop the looping if all the letters in the message array were compared
+    }
+  }
+}
+
+print(String(message))
